@@ -6,8 +6,8 @@
 .card__front--container,
 .card__back--container {
     position: absolute;
+    height: 40rem;
     width: 100%;
-    height: 25rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -26,17 +26,17 @@
 
 .cards {
   display: grid;
-  grid-column-gap: 1.5rem;
+  grid-column-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  width: 85%;
+  gap: 2rem;
+  width: 70%;
   margin: auto;
   border-radius: 1rem;
 }
 
 .cards-grid {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
 }
 
 .card__back--container {
@@ -51,14 +51,26 @@
     padding-bottom:1rem;
     color: #C38D5F;
     font-size: 1.6rem;
+    margin: 2rem 0 0 2rem;
 }
 
 
 .card__img {
-     height: 25rem;
+     height: 40rem;
      width: 100%;
      object-fit: cover;
      border-radius: 5px;
    }
+
+.span-info {
+    display: block;
+    color: silver;
+    margin-bottom: .5rem;
+}
+
+.span-info-2 {
+    display: block;
+    color: #C38D5F;
+}
 
   

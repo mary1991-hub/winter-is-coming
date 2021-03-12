@@ -14,10 +14,10 @@ function Cards(props) {
                             <img className="card__img" src={character.imageUrl} alt=""/>
                         </div>
                         <div className="card__face card__back--container">
-                            <li className="card__info">FAMILY: -- {character.family}</li>
-                            <li className="card__info">FULL NAME: -- {character.fullName}</li>
-                            <li className="card__info">TITLE: -- {character.title}</li>
-                            <li  className="card__info">What is the actors real name?  Take your guess!</li>
+                            <li className="card__info"><span className="span-info">FAMILY:</span> <span className="span-info-2">{character.family}</span></li>
+                            <li className="card__info"><span className="span-info">FULL NAME:</span> <span className="span-info-2">{character.fullName}</span></li>
+                            <li className="card__info"><span className="span-info">TITLE:</span> <span className="span-info-2">{character.title}</span></li>
+                            <li  className="card__info"><span className="span-info">What is the actors real name?</span> <span className="span-info-2">Take your guess!</span></li>
                         </div>
                     </div>
                 </div>
