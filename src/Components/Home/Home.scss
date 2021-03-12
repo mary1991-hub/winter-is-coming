@@ -11,22 +11,16 @@ body {
     background-size: cover;
     background-position: center;
 }
-
-.Hero {
    
-    &__Header {
 
-        color: white;
-    }
-
-    &__Header--img {
-        margin: 1.5rem 0 3rem 0;
+    .Hero__Header--img {
+        margin: 1.5rem 0 4rem 0;
         height: 25rem;
     }
-}
+
 
 .Hero__Heading {
-font-size: 2rem;
+font-size: 3rem;
 color: #C38D5F;
 margin-bottom: 4rem;
     

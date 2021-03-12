@@ -3,23 +3,24 @@
 
 
 
-.card__front-container
-.card__back-container {
+.card__front--container,
+.card__back--container {
     position: absolute;
     width: 100%;
+    height: 25rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.card__item {
+.card-item {
     position:relative;
     width: 100%;
-    height: 100%;
+    height: 30rem;
     transition:transform 0.8s;
     transform-style:preserve-3d;
-    perspective: 600px;
 }
-.card:hover.card__item{
+
+.card-item:hover {
     transform: rotateY(180deg);
 }
 
@@ -33,26 +34,29 @@
   border-radius: 1rem;
 }
 
-.card__back-container {
+.cards-grid {
+    width: 100%;
+    height: 30rem;
+}
+
+.card__back--container {
     background-color: black;
     padding:2rem;
     transform: rotateY(180deg);
 }
 
 .card__info {
+    position: relative;
     list-style: none;
     padding-bottom:1rem;
-    // color: #B9540C;
-    // color: #FFF190;
-    // color: #FCFEF0;
     color: #C38D5F;
     font-size: 1.6rem;
 }
 
 
 .card__img {
-     height: 40rem;
-     width: 30rem;
+     height: 25rem;
+     width: 100%;
      object-fit: cover;
      border-radius: 5px;
    }
