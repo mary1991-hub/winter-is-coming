@@ -8,6 +8,11 @@ function Cards(props) {
         <section className="cards">
           {props.characters.map(character => {
               return (
+<<<<<<< HEAD
+                  <key={character.id}>
+                      <li className="text">{character.firstName}</li>
+                  </ul>
+=======
                 <div className="cards-grid" key={character.id}>
                     <div className="card-item">
                         <div className="card__face card__front--container">
@@ -21,6 +26,7 @@ function Cards(props) {
                         </div>
                     </div>
                 </div>
+>>>>>>> origin/main
               )
           })}
             

@@ -1,5 +1,8 @@
 @import '../../Partials/Typography.scss';
 
+<<<<<<< HEAD
+card__flip{
+=======
 
 
 
@@ -12,11 +15,60 @@
 }
 
 .card__item {
+>>>>>>> origin/main
     position:relative;
     width: 100%;
     height: 100%;
     transition:transform 0.8s;
     transform-style:preserve-3d;
+<<<<<<< HEAD
+}
+.card:hover.card__flip{
+    transform:rotateY(180deg);
+}
+.card__front-container 
+.card__back-container{
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card__back-container{
+    background-color: black;
+    color:white;
+    padding:2rem;
+    transform: rotateY(180deg);
+}
+.cards__info{
+    list-style: none;
+    padding-bottom:1rem;
+}
+card__img{
+ width:100%;
+  height: 30rem;
+  object-fit:cover;  
+}
+cards{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:1rem;
+}
+@media(max-width:1080px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:750px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width:450px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+=======
     perspective: 600px;
 }
 .card:hover.card__item{
@@ -58,3 +110,4 @@
    }
 
   
+>>>>>>> origin/main
