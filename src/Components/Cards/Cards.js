@@ -8,7 +8,7 @@ function Cards(props) {
         <section className="Cards">
           {props.characters.map(character => {
               return (
-                  <ul key={character.id}>
+                  <key={character.id}>
                       <li className="text">{character.firstName}</li>
                   </ul>
               )
