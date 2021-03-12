@@ -5,20 +5,22 @@ import './Cards.scss';
 function Cards(props) {
        
     return (
-        <section className="Cards">
+        <section className="cards">
           {props.characters.map(character => {
               return (
-                  <div key={character.id}>
-                  <ul className="Cards__Front--Container">
-                      <li className="Cards__List" className="text">{character.image}</li>
-                  </ul>
-                  <ul className="Cards__Back--Container">
-                      <li className="Cards__Family">{character.family}</li>
-                      <li className="Cards__FullName">{character.fullName}</li>
-                      <li className="Cards__Title">{character.title}</li>
-                      <li>What is the actors real name?  Make your guess!</li>
-                  </ul>
-                  </div>
+                <div className="cards-grid" key={character.id}>
+                    <div className="card-item">
+                        <div className="card__face card__front--container">
+                            <img className="card__img" src={character.imageUrl} alt=""/>
+                        </div>
+                        <div className="card__face card__back--container">
+                            <li className="card__info">FAMILY: -- {character.family}</li>
+                            <li className="card__info">FULL NAME: -- {character.fullName}</li>
+                            <li className="card__info">TITLE: -- {character.title}</li>
+                            <li  className="card__info">What is the actors real name?  Take your guess!</li>
+                        </div>
+                    </div>
+                </div>
               )
           })}
             
