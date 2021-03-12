@@ -1,7 +1,7 @@
-@use '../../Fonts/Game\ of\ Thrones.ttf';
-@use '../../Partials/_Typography.scss';
+@import '../../Partials/Typography.scss';
 
-.Hero {
+
+body {
     background-image: url('../../Assets/winter-bg.jpg');
     width: 100vw;
     height: 100vh;
@@ -9,11 +9,18 @@
     background-position: center;
     position: relative;
 
+}
+
+.Hero {
+   
     &__Header {
+
         color: white;
-        font-family: 'GameofThrones';
-        font-size: 5rem;
-        text-transform: uppercase;
+    }
+
+    &__Header--img {
+        margin-top: 1.5rem;
+        height: 25rem;
        
     }
 }
