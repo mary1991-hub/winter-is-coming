@@ -20,22 +20,20 @@ class App extends React.Component {
     axios.get(`${API__URL}/videos${API__KEY}`)
     .then(res => {
       console.log(res.data)
+   
+    }
+    )} 
+
+  componentDidUpdate(prevProps) {
+   
+    axios.get(`${API__URL}/videos${API__KEY}`)
+    .then(res => {
+      console.log(res.data)
       this.setState({
         characters: res.data
       })
     }
     )} 
-
-  // componentDidUpdate(prevProps) {
-  //   if(prevProps !== this.state.characters.id)
-  //   axios.get(`${API__URL}/videos${API__KEY}`)
-  //   .then(res => {
-  //     console.log(res.data)
-  //     this.setState({
-  //       characters: res.data
-  //     })
-  //   }
-  //   )} 
   
 
   render() {
