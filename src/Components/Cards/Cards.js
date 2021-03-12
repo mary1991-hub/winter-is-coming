@@ -8,8 +8,8 @@ function Cards(props) {
         <section className="Cards">
           {props.characters.map(character => {
               return (
-                  <ul>
-                      <li className="text">{character.title}</li>
+                  <ul key={character.id}>
+                      <li className="text">{character.firstName}</li>
                   </ul>
               )
           })}
