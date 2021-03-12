@@ -1,8 +1,5 @@
-@use '../Fonts/GameofThrones.woff';
-@use '../Fonts/stylesheet.css';
-
 @font-face {
-    font-family: 'Game of Thrones';
+    font-family: 'GameofThrones';
     src: url('../Fonts/GameofThrones.woff2') format('woff2'),
         url('../Fonts/GameofThrones.woff') format('woff');
     font-weight: normal;
