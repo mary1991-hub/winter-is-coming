@@ -2,21 +2,21 @@ import React from 'react';
 import './Cards.scss';
 
 
-class Cards extends React.Component {
-
-   
-
-    render(props) {
-
-        // {props.characters.map(character => 
-        //     <ul><li>{props.image}</li></ul> )}
+function Cards(props) {
+       
     return (
         <section className="Cards">
-           
+          {props.characters.map(character => {
+              return (
+                  <ul>
+                      <li className="text">{character.title}</li>
+                  </ul>
+              )
+          })}
             
         </section>
-    )
-    }
+    );
 }
+
 
 export default Cards;
